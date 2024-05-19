@@ -18,30 +18,36 @@ body {
   background-color: white;
 }
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+p{
+  margin-bottom: 4px;
 }
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 .input {
-  flex: 1;
+  width: 100%;
   padding: 10px 20px;
   border: 1px solid gray;
 }
 .addBtn {
   cursor: pointer;
+  width: 100%;
+  margin: 10px 0 0 0;
   background-color: steelblue;
   color: white;
   border: 1px solid steelblue;
   border-radius: 4px;
   padding: 10px 20px;
-  margin-left: 10px;
   transition: all 0.2s;
 }
 .addBtn:hover {
   background-color: rgb(12, 56, 92);
 }
 .list {
+  cursor: pointer;
   list-style: none;
   flex: 1;
   padding: 10px 20px;
@@ -51,4 +57,17 @@ h1 {
 }
 .toggleList {
   background-color: rgb(1, 207, 1);
+}
+
+@media (max-width: 768px){
+  #todo{
+    width: 98%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+  .list{
+    word-wrap: break-word;
+  }
 }
