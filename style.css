@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+#todo {
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+}
+.input {
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px solid gray;
+}
+.addBtn {
+  cursor: pointer;
+  background-color: steelblue;
+  color: white;
+  border: 1px solid steelblue;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  transition: all 0.2s;
+}
+.addBtn:hover {
+  background-color: rgb(12, 56, 92);
+}
+.list {
+  list-style: none;
+  flex: 1;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 10px;
+}
+.toggleList {
+  background-color: rgb(1, 207, 1);
+}
